@@ -17,7 +17,7 @@ jobs:
       - name: Checkout GitHub Action Repo
         uses: actions/checkout@v2
         with:
-          repository: ${{secrets.REPO}}
+          repository: stealth-15/aws-cloudformation-deploy
           branch: master
           token: ${{secrets.GIT_HUB_TOKEN}}   # stored in GitHub secrets
           path: .github/actions/private-action
