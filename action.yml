@@ -16,9 +16,9 @@ jobs:
       - name: Checkout GitHub Action Repo
         uses: actions/checkout@v2
         with:
-          repository: ${{ secrets.REPO }}
+          repository: ${{secrets.REPO}}
           ref: v0.1.2
-          token: ${{ secrets.GIT_HUB_TOKEN }}   # stored in GitHub secrets
+          token: ${{secrets.GIT_HUB_TOKEN}}   # stored in GitHub secrets
           path: .github/actions/private-action
       - name: Run My Action
         uses: ./.github/actions/private-action
